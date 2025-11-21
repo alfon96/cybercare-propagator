@@ -1,0 +1,14 @@
+{
+  "name": "Propagator",
+  "dockerComposeFile": "../../docker-compose.yml",
+  "service": "propagator",
+  "workspaceFolder": "/app",
+  "overrideCommand": true,
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.black-formatter","ritwickdey.liveserver"]
+    }
+  },
+  "postCreateCommand": "git config --global user.name \"$GIT_USER\" && git config --global user.email \"$GIT_EMAIL\""
+}
